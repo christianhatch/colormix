@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ColorMix_Example' do
+  pod 'ColorMix', :path => '../'
+
+  target 'ColorMix_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
