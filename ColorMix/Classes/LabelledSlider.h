@@ -14,6 +14,6 @@
 @property (weak, nonatomic, nullable) IBOutlet UILabel *valueLabel;
 @property (weak, nonatomic, nullable) IBOutlet UISlider *slider;
 
-+ (instancetype)labelledSliderWithTitle:(nullable NSString *)title;
++ (nullable instancetype)labelledSliderWithTitle:(nullable NSString *)title;
 
 @end
