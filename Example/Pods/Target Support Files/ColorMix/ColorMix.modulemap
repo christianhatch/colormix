@@ -1,0 +1,6 @@
+framework module ColorMix {
+  umbrella header "ColorMix-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		059B40BE8BCBBFF378F665B8 /* Pods_ColorMix_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498414C2BEA6A94949645B21 /* Pods_ColorMix_Tests.framework */; };
+		4567ED891D09F74A00CCCFA5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4567ED881D09F74A00CCCFA5 /* Launch Screen.storyboard */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,6 +40,7 @@
 		076E5ED725B79A3CEF4E63EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		331EB93DAB9280A7340D9CA8 /* Pods-ColorMix_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorMix_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorMix_Tests/Pods-ColorMix_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F10913A67B3DE582B1E0F55 /* Pods-ColorMix_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorMix_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorMix_Example/Pods-ColorMix_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4567ED881D09F74A00CCCFA5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		498414C2BEA6A94949645B21 /* Pods_ColorMix_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorMix_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7E3990725D11B2729D697C /* Pods-ColorMix_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorMix_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorMix_Tests/Pods-ColorMix_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ColorMix_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorMix_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +66,7 @@
 		835AA9F22BA4240CBAFFFCDC /* Pods-ColorMix_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorMix_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorMix_Example/Pods-ColorMix_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		94B0FA63A6985C05E82F3F62 /* Pods_ColorMix_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorMix_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A709E3E6A2A3841C207AAA21 /* ColorMix.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ColorMix.podspec; path = ../ColorMix.podspec; sourceTree = "<group>"; };
+		A709E3E6A2A3841C207AAA21 /* ColorMix.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ColorMix.podspec; path = ../ColorMix.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* ColorMix-Prefix.pch */,
+				4567ED881D09F74A00CCCFA5 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				4567ED891D09F74A00CCCFA5 /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +520,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorMix/ColorMix-Prefix.pch";
 				INFOPLIST_FILE = "ColorMix/ColorMix-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +537,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorMix/ColorMix-Prefix.pch";
 				INFOPLIST_FILE = "ColorMix/ColorMix-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

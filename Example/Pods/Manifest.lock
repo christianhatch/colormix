@@ -1,0 +1,16 @@
+PODS:
+  - ColorMix (0.1.0)
+
+DEPENDENCIES:
+  - ColorMix (from `../`)
+
+EXTERNAL SOURCES:
+  ColorMix:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ColorMix: 1b10fb3a7cb2c8e654622568049cbe4a95917f1b
+
+PODFILE CHECKSUM: c3087d5569cfdd6c46dc2f7d5d5bd6378b917ebc
+
+COCOAPODS: 1.0.0
