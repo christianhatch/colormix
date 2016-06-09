@@ -12,7 +12,7 @@
     "Christian Hatch": "christianhatch@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/ColorMix.git",
+    "git": "https://github.com/christianhatch/colormix.git",
     "tag": "0.1.0"
   },
   "social_media_url": "https://twitter.com/commodoreftp",
@@ -20,8 +20,9 @@
     "ios": "9.0"
   },
   "source_files": "ColorMix/Classes/**/*",
-  "resources": [
-    "ColorMix/Classes/ColorPickerView.xib",
-    "ColorMix/Classes/LabelledSlider.xib"
-  ]
+  "resource_bundles": {
+    "ColorMix": [
+      "ColorMix/Assets/*.xib"
+    ]
+  }
 }

@@ -7,99 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04A6CC12E22A613CD2CA12BDB4614A58 /* UIColor+Colormix.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F695F9C889A071C0D5C7504363C1424 /* UIColor+Colormix.m */; };
+		00E4F75EC7A62A5AB25A274CD787A387 /* UIImage+Colormix.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD5A6CE61698D915A723D5D99DD4CE8 /* UIImage+Colormix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		067E608AC73BF6446097A694D9801002 /* Pods-ColorMix_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8769E3E5576D367E6464F960C1B2D788 /* Pods-ColorMix_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13641AC89F5C2F0220E223BE496F3F8C /* ColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC732AC24C7A0643B8FFA52741107E4E /* ColorPickerView.m */; };
-		1FC4238EABDD592BD3794A4C20F92D45 /* LabelledSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C643975867036C90D6E7B98F711929 /* LabelledSlider.xib */; };
-		25E0E5919075AC186728526BBD58B3F9 /* LabelledSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 933B0885A3A7656FBB07A086062432D9 /* LabelledSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		305ADB07BB7FFDDB53D62517B07BE62A /* ColorMix.h in Headers */ = {isa = PBXBuildFile; fileRef = C615D6D66666F4FD77CD7C900F08F0EB /* ColorMix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46AC94759E52C9B957B1E90DECE2B428 /* ColorPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530582C7CA506B773783D3A7F5EBFA52 /* ColorPickerView.xib */; };
-		49F9E1F9C0183F88E3C4BB5FB6C0D1E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		4A9DF57410AFBCDC16BCFC0465E8BA3F /* LabelledSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F82A297A3C0C52224635307DEA2A607 /* LabelledSlider.m */; };
-		5AC09E537912FF9099CED1CB8478FA91 /* UIImage+Colormix.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5C1279E7918F3344F28D536EE4C7E8 /* UIImage+Colormix.m */; };
+		08583F72337EECFBE9FF57436E978C61 /* LabelledSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F907AE174953FDFF46C9DE61AD9ABD /* LabelledSlider.m */; };
+		09307BC8CB06B0E8DCFF266F3BD7D00E /* UIImage+Colormix.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3B9852D9784B2462BEFEDF52B424E /* UIImage+Colormix.m */; };
+		1771F32856B82A6C64B59DE3541159DF /* UIColor+Colormix.h in Headers */ = {isa = PBXBuildFile; fileRef = 10EC2731BD18D8CA6CD8BF2311FC07D7 /* UIColor+Colormix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		198E98515AEF12EE54A838801DFE6E0D /* ColorPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A27E158CB8C512D956DD387589BDC3 /* ColorPickerView.xib */; };
+		1F6856AD07AF77E47E2D94BC064589E7 /* ColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D3A8383DC47AF33E4726B0D79D1C53 /* ColorPickerView.m */; };
 		5D94D0404E4F94406A288EC87AE67F41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		68DFD6D0517F885B3051419E318BB8D4 /* ColorPickerView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 530582C7CA506B773783D3A7F5EBFA52 /* ColorPickerView.xib */; };
-		896A0AE69C08C17B4005C30872DFEE89 /* ColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F1B7C92334DB2E35E7E0BCBB5C2633 /* ColorPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DC36418E34E783FCF9D3662B356D478 /* UIColor+Colormix.m in Sources */ = {isa = PBXBuildFile; fileRef = A6342447FFC7526E7E2B3489F7B86F0F /* UIColor+Colormix.m */; };
+		7CF63DAF850F951B7D4A516480932649 /* ColorMix.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B829FBE74C1CBACE37B69B3622237D /* ColorMix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DB65F350FF63B048A73F09992510B4D /* ColorMix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAACEB1D8AA4EDEC5905BE1DFF47EE7 /* ColorMix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8215DEA1C17A25E856076A4CCD2EE281 /* ColorMix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7964A8C2CBFFAD49C29A3D98AAE721FD /* ColorMix-dummy.m */; };
 		89BB870161D8AFCC702EBEAA36B64C11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		926651B6304093A5316B7CF454471403 /* ColorMix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0921EA5289B753DE1E4466E76290B36 /* ColorMix-dummy.m */; };
-		932387CDE2A3547CC0B07874BE6E8B2B /* ColorMix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7A9974996BF041C63303B3F8FD9576 /* ColorMix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95FD3CC597A671E576BEFAD59580B1F8 /* UIImage+Colormix.h in Headers */ = {isa = PBXBuildFile; fileRef = E326F0DD5835131EA6B7B11ECFA535ED /* UIImage+Colormix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1F9B86B8090A3B9D61A9BF015C7A580 /* LabelledSlider.xib in Sources */ = {isa = PBXBuildFile; fileRef = 06C643975867036C90D6E7B98F711929 /* LabelledSlider.xib */; };
-		C72B0688412938DC32EC547656EF79D9 /* UIColor+Colormix.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD9036BB4653A40A6D4042F6E54E59A /* UIColor+Colormix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B83DA7865C29A4DEBBDFE887AC90C0 /* ColorMix.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0AEC77D635987E7F7AF9689E5F55734E /* ColorMix.bundle */; };
+		C88FAEDD6A04240E9140BE267DE1191F /* LabelledSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD82938A52359738F1D3778BBF179789 /* LabelledSlider.xib */; };
+		C8F1AD96D6FB6C62FFC9F873E840317B /* LabelledSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 110C20B84DE15B41DE44FF984A4C39A9 /* LabelledSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D67015064C6F40B9637A87E45FDADB18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		E2C1022B7CB1CCABF7E81662B0C04101 /* Pods-ColorMix_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B8C0BA9EF9990880F6EF1F87EB945 /* Pods-ColorMix_Tests-dummy.m */; };
 		E87D923589FF1B2B9987759632559ADA /* Pods-ColorMix_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6577E035D77C65ADA6449E29B81FCB08 /* Pods-ColorMix_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4A90C7E8F0F4398B7159E71F7B37364 /* Pods-ColorMix_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F13DA1813494A513A16FCAE42255D5 /* Pods-ColorMix_Example-dummy.m */; };
+		FF3439D6F47D50371F06E9341FC413CA /* ColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FEF31FD9365BD0C530039E313D69EA8 /* ColorPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		55D11562BE5D6EC0226A577DED0D3F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC281B4F32CB3E2BF06478F5FC67AF85;
+			remoteInfo = "ColorMix-ColorMix";
+		};
 		5C38803B9CED4EFEC13CBCE9F0A6E37C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F5FB1C654AAA865BE9AB27D484C1A138;
+			remoteGlobalIDString = 09BF7D27F729D5E30C7208807B7B0EC4;
 			remoteInfo = ColorMix;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06C643975867036C90D6E7B98F711929 /* LabelledSlider.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LabelledSlider.xib; sourceTree = "<group>"; };
+		0AEC77D635987E7F7AF9689E5F55734E /* ColorMix.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorMix.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1D2D63503C8F2F3C44AF1F356CBB6D /* Pods-ColorMix_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorMix_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0FD9036BB4653A40A6D4042F6E54E59A /* UIColor+Colormix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Colormix.h"; sourceTree = "<group>"; };
-		2F82A297A3C0C52224635307DEA2A607 /* LabelledSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabelledSlider.m; sourceTree = "<group>"; };
+		10EC2731BD18D8CA6CD8BF2311FC07D7 /* UIColor+Colormix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+Colormix.h"; sourceTree = "<group>"; };
+		110C20B84DE15B41DE44FF984A4C39A9 /* LabelledSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabelledSlider.h; sourceTree = "<group>"; };
+		1CE3B9852D9784B2462BEFEDF52B424E /* UIImage+Colormix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Colormix.m"; sourceTree = "<group>"; };
+		1FEF31FD9365BD0C530039E313D69EA8 /* ColorPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ColorPickerView.h; sourceTree = "<group>"; };
+		20D3A8383DC47AF33E4726B0D79D1C53 /* ColorPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ColorPickerView.m; sourceTree = "<group>"; };
+		2DAACEB1D8AA4EDEC5905BE1DFF47EE7 /* ColorMix-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorMix-umbrella.h"; sourceTree = "<group>"; };
+		322B0DF18306F4157A523572FE452EFC /* Pods_ColorMix_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorMix_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34D073251265219D2418E12B643D4DC2 /* ColorMix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorMix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B50533CE8D7F198E6A03A3861327167 /* Pods-ColorMix_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColorMix_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3E2D914D631505F3C998C9C91DB04C17 /* Pods_ColorMix_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorMix_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		464FABBD08C4CBA0B2585E39DAA30E09 /* Pods-ColorMix_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColorMix_Tests-resources.sh"; sourceTree = "<group>"; };
-		4E395743C673497980AA376E24530C85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F695F9C889A071C0D5C7504363C1424 /* UIColor+Colormix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colormix.m"; sourceTree = "<group>"; };
-		530582C7CA506B773783D3A7F5EBFA52 /* ColorPickerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ColorPickerView.xib; sourceTree = "<group>"; };
-		54F28D6310A83B75208D5E4A7D3A093E /* ColorMix.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ColorMix.modulemap; sourceTree = "<group>"; };
-		59F1B7C92334DB2E35E7E0BCBB5C2633 /* ColorPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ColorPickerView.h; sourceTree = "<group>"; };
+		59B829FBE74C1CBACE37B69B3622237D /* ColorMix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ColorMix.h; sourceTree = "<group>"; };
+		63E9F05EAAF9FD0EA3D37D045967CDF5 /* ColorMix.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColorMix.xcconfig; sourceTree = "<group>"; };
 		6577E035D77C65ADA6449E29B81FCB08 /* Pods-ColorMix_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorMix_Tests-umbrella.h"; sourceTree = "<group>"; };
+		657B4D2CA6959E9EC6D15297E0369303 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		670F49F2A03C89C081459BFA495D9AB8 /* Pods-ColorMix_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ColorMix_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		676F69E55B9C6C4788B6AA2513FA5B87 /* Pods-ColorMix_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ColorMix_Example.modulemap"; sourceTree = "<group>"; };
-		6A5C1279E7918F3344F28D536EE4C7E8 /* UIImage+Colormix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Colormix.m"; sourceTree = "<group>"; };
 		6E1B8C0BA9EF9990880F6EF1F87EB945 /* Pods-ColorMix_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorMix_Tests-dummy.m"; sourceTree = "<group>"; };
 		7492973773000022871C82F4D07A5287 /* Pods-ColorMix_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ColorMix_Tests.modulemap"; sourceTree = "<group>"; };
+		778FE353D851FFBD904510714C2AB094 /* Pods_ColorMix_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorMix_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7964A8C2CBFFAD49C29A3D98AAE721FD /* ColorMix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ColorMix-dummy.m"; sourceTree = "<group>"; };
+		7BD5A6CE61698D915A723D5D99DD4CE8 /* UIImage+Colormix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Colormix.h"; sourceTree = "<group>"; };
 		81F13DA1813494A513A16FCAE42255D5 /* Pods-ColorMix_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorMix_Example-dummy.m"; sourceTree = "<group>"; };
 		823F033A26F63FB7927B9A29F4C1AA58 /* Pods-ColorMix_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColorMix_Example-frameworks.sh"; sourceTree = "<group>"; };
 		83CA60FDAAE8E64D7AF6DEA9428FF857 /* Pods-ColorMix_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ColorMix_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		86CA32D2756ED4BB92ECB9BCEF744A41 /* ColorMix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorMix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8769E3E5576D367E6464F960C1B2D788 /* Pods-ColorMix_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorMix_Example-umbrella.h"; sourceTree = "<group>"; };
+		89A27E158CB8C512D956DD387589BDC3 /* ColorPickerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ColorPickerView.xib; sourceTree = "<group>"; };
 		89E75F1906AFFCB56E7F6FB457556A42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9305457935FC2136AA00814EC2D5E1F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		933B0885A3A7656FBB07A086062432D9 /* LabelledSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LabelledSlider.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3138E94B79C17CCA4F987EFDCA3AAC7 /* Pods-ColorMix_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorMix_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A6342447FFC7526E7E2B3489F7B86F0F /* UIColor+Colormix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colormix.m"; sourceTree = "<group>"; };
 		A678E035A9DE088263D730EC88BCAF8A /* Pods-ColorMix_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColorMix_Example-resources.sh"; sourceTree = "<group>"; };
+		AD82938A52359738F1D3778BBF179789 /* LabelledSlider.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LabelledSlider.xib; sourceTree = "<group>"; };
 		ADBA52FAE40B69E47B62DD7C68B6339E /* Pods-ColorMix_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColorMix_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AFE1551D3D753852F333A71902AD1E0C /* ColorMix.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ColorMix.modulemap; sourceTree = "<group>"; };
 		B88B40DE883C9FAC9A265CA340D4F55A /* Pods-ColorMix_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColorMix_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C0921EA5289B753DE1E4466E76290B36 /* ColorMix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ColorMix-dummy.m"; sourceTree = "<group>"; };
-		C615D6D66666F4FD77CD7C900F08F0EB /* ColorMix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ColorMix.h; sourceTree = "<group>"; };
-		CE7A9974996BF041C63303B3F8FD9576 /* ColorMix-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorMix-umbrella.h"; sourceTree = "<group>"; };
+		C2A43FEE1324C474A2A92A1F92B21039 /* ResourceBundle-ColorMix-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ColorMix-Info.plist"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D50E2D1FC9591C946AFF33F21D6D3589 /* ColorMix.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColorMix.xcconfig; sourceTree = "<group>"; };
+		DC2A9EDAEDCFACB8A6842578A3927224 /* ColorMix-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorMix-prefix.pch"; sourceTree = "<group>"; };
 		DC5E3C54CAD157FCC2C1039239B550B9 /* Pods-ColorMix_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorMix_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E326F0DD5835131EA6B7B11ECFA535ED /* UIImage+Colormix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Colormix.h"; sourceTree = "<group>"; };
-		EA1698FFE9C98D41A0604DA536D1AA1C /* ColorMix-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorMix-prefix.pch"; sourceTree = "<group>"; };
-		ED40828D9DDF07260E6224B9F2F1CC80 /* Pods_ColorMix_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorMix_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F907AE174953FDFF46C9DE61AD9ABD /* LabelledSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabelledSlider.m; sourceTree = "<group>"; };
 		F2B0E9A11C7989F1367EA0E5574EBCDF /* Pods-ColorMix_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorMix_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FC732AC24C7A0643B8FFA52741107E4E /* ColorPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ColorPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		507FB00C070F7065E80E2AC5F4AD5AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50E8B893F2480F6744B9BCB8C06837C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				89BB870161D8AFCC702EBEAA36B64C11 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		74B03FD12B1E1270166F5BE5D5231CF9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49F9E1F9C0183F88E3C4BB5FB6C0D1E9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,9 +118,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C102A60AAC56CC76B4BB30835D6B6D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67015064C6F40B9637A87E45FDADB18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		399986A9462B48EF6AD1F6B24CF72676 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				59B829FBE74C1CBACE37B69B3622237D /* ColorMix.h */,
+				1FEF31FD9365BD0C530039E313D69EA8 /* ColorPickerView.h */,
+				20D3A8383DC47AF33E4726B0D79D1C53 /* ColorPickerView.m */,
+				110C20B84DE15B41DE44FF984A4C39A9 /* LabelledSlider.h */,
+				E2F907AE174953FDFF46C9DE61AD9ABD /* LabelledSlider.m */,
+				10EC2731BD18D8CA6CD8BF2311FC07D7 /* UIColor+Colormix.h */,
+				A6342447FFC7526E7E2B3489F7B86F0F /* UIColor+Colormix.m */,
+				7BD5A6CE61698D915A723D5D99DD4CE8 /* UIImage+Colormix.h */,
+				1CE3B9852D9784B2462BEFEDF52B424E /* UIImage+Colormix.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,18 +153,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4E2AA263FF54A271FBB4182DFA52F334 /* Support Files */ = {
+		42C289F40E2AE442DB454176AFFC59D0 /* ColorMix */ = {
 			isa = PBXGroup;
 			children = (
-				54F28D6310A83B75208D5E4A7D3A093E /* ColorMix.modulemap */,
-				D50E2D1FC9591C946AFF33F21D6D3589 /* ColorMix.xcconfig */,
-				C0921EA5289B753DE1E4466E76290B36 /* ColorMix-dummy.m */,
-				EA1698FFE9C98D41A0604DA536D1AA1C /* ColorMix-prefix.pch */,
-				CE7A9974996BF041C63303B3F8FD9576 /* ColorMix-umbrella.h */,
-				4E395743C673497980AA376E24530C85 /* Info.plist */,
+				399986A9462B48EF6AD1F6B24CF72676 /* Classes */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ColorMix";
+			path = ColorMix;
 			sourceTree = "<group>";
 		};
 		5E3C4312184C92BFBCB890A8B4EA4228 /* Pods-ColorMix_Example */ = {
@@ -154,41 +179,51 @@
 			path = "Target Support Files/Pods-ColorMix_Example";
 			sourceTree = "<group>";
 		};
-		6E7F68D139F9E9EE5F595BAE90604B07 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				B433EF587B08E5677E4032ABFC0915E4 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C1C1A57C5D0AB863F1EE74F93A324A92 /* Products */,
+				A128F7A53A507C0C5ACF32F4FE7EF222 /* Products */,
 				F38D37A94E41252C4EDF12FABDC751A7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		AD35558E11818D0808CB4207E5B10466 /* ColorMix */ = {
+		A128F7A53A507C0C5ACF32F4FE7EF222 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C80455CA4F605BB3AAA1A81BE15A43BC /* ColorMix */,
-				E93553807CC3453D3CAC86E1CC737FE1 /* Resources */,
-				4E2AA263FF54A271FBB4182DFA52F334 /* Support Files */,
+				0AEC77D635987E7F7AF9689E5F55734E /* ColorMix.bundle */,
+				34D073251265219D2418E12B643D4DC2 /* ColorMix.framework */,
+				778FE353D851FFBD904510714C2AB094 /* Pods_ColorMix_Example.framework */,
+				322B0DF18306F4157A523572FE452EFC /* Pods_ColorMix_Tests.framework */,
 			);
-			name = ColorMix;
-			path = ../..;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2F3D3F37B4CBECE15DC1FA60CB80CED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1C368D7AF35EFE8A80C27ECC5B5500A /* ColorMix */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		B433EF587B08E5677E4032ABFC0915E4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AD35558E11818D0808CB4207E5B10466 /* ColorMix */,
+				CD4AAB6907DDB8738A67944485F92F41 /* ColorMix */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B8609A8024222ECCDA20EBC126A7B543 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				89A27E158CB8C512D956DD387589BDC3 /* ColorPickerView.xib */,
+				AD82938A52359738F1D3778BBF179789 /* LabelledSlider.xib */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		BADEBF2AE467702C87DCBE393BDF54CA /* Pods-ColorMix_Tests */ = {
@@ -217,54 +252,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C1C1A57C5D0AB863F1EE74F93A324A92 /* Products */ = {
+		C7E97306B36420B6C2FC19B1D512C890 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				86CA32D2756ED4BB92ECB9BCEF744A41 /* ColorMix.framework */,
-				ED40828D9DDF07260E6224B9F2F1CC80 /* Pods_ColorMix_Example.framework */,
-				3E2D914D631505F3C998C9C91DB04C17 /* Pods_ColorMix_Tests.framework */,
+				AFE1551D3D753852F333A71902AD1E0C /* ColorMix.modulemap */,
+				63E9F05EAAF9FD0EA3D37D045967CDF5 /* ColorMix.xcconfig */,
+				7964A8C2CBFFAD49C29A3D98AAE721FD /* ColorMix-dummy.m */,
+				DC2A9EDAEDCFACB8A6842578A3927224 /* ColorMix-prefix.pch */,
+				2DAACEB1D8AA4EDEC5905BE1DFF47EE7 /* ColorMix-umbrella.h */,
+				657B4D2CA6959E9EC6D15297E0369303 /* Info.plist */,
+				C2A43FEE1324C474A2A92A1F92B21039 /* ResourceBundle-ColorMix-Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ColorMix";
 			sourceTree = "<group>";
 		};
-		C80455CA4F605BB3AAA1A81BE15A43BC /* ColorMix */ = {
+		CD4AAB6907DDB8738A67944485F92F41 /* ColorMix */ = {
 			isa = PBXGroup;
 			children = (
-				DC4F4D0A3504804CE0C4B14101661B52 /* Classes */,
+				42C289F40E2AE442DB454176AFFC59D0 /* ColorMix */,
+				A2F3D3F37B4CBECE15DC1FA60CB80CED /* Resources */,
+				C7E97306B36420B6C2FC19B1D512C890 /* Support Files */,
 			);
-			path = ColorMix;
+			name = ColorMix;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		DC4F4D0A3504804CE0C4B14101661B52 /* Classes */ = {
+		D1C368D7AF35EFE8A80C27ECC5B5500A /* ColorMix */ = {
 			isa = PBXGroup;
 			children = (
-				C615D6D66666F4FD77CD7C900F08F0EB /* ColorMix.h */,
-				59F1B7C92334DB2E35E7E0BCBB5C2633 /* ColorPickerView.h */,
-				FC732AC24C7A0643B8FFA52741107E4E /* ColorPickerView.m */,
-				530582C7CA506B773783D3A7F5EBFA52 /* ColorPickerView.xib */,
-				933B0885A3A7656FBB07A086062432D9 /* LabelledSlider.h */,
-				2F82A297A3C0C52224635307DEA2A607 /* LabelledSlider.m */,
-				06C643975867036C90D6E7B98F711929 /* LabelledSlider.xib */,
-				0FD9036BB4653A40A6D4042F6E54E59A /* UIColor+Colormix.h */,
-				4F695F9C889A071C0D5C7504363C1424 /* UIColor+Colormix.m */,
-				E326F0DD5835131EA6B7B11ECFA535ED /* UIImage+Colormix.h */,
-				6A5C1279E7918F3344F28D536EE4C7E8 /* UIImage+Colormix.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E93553807CC3453D3CAC86E1CC737FE1 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				EF8DE55E46A9959CB456B6644066F118 /* ColorMix */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		EF8DE55E46A9959CB456B6644066F118 /* ColorMix */ = {
-			isa = PBXGroup;
-			children = (
-				6E7F68D139F9E9EE5F595BAE90604B07 /* Classes */,
+				B8609A8024222ECCDA20EBC126A7B543 /* Assets */,
 			);
 			path = ColorMix;
 			sourceTree = "<group>";
@@ -281,16 +298,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7B5DAE84CF0719AE2E71EB09916AA853 /* Headers */ = {
+		5D3ACE4718385035B77125FF520876F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				932387CDE2A3547CC0B07874BE6E8B2B /* ColorMix-umbrella.h in Headers */,
-				305ADB07BB7FFDDB53D62517B07BE62A /* ColorMix.h in Headers */,
-				896A0AE69C08C17B4005C30872DFEE89 /* ColorPickerView.h in Headers */,
-				25E0E5919075AC186728526BBD58B3F9 /* LabelledSlider.h in Headers */,
-				C72B0688412938DC32EC547656EF79D9 /* UIColor+Colormix.h in Headers */,
-				95FD3CC597A671E576BEFAD59580B1F8 /* UIImage+Colormix.h in Headers */,
+				7DB65F350FF63B048A73F09992510B4D /* ColorMix-umbrella.h in Headers */,
+				7CF63DAF850F951B7D4A516480932649 /* ColorMix.h in Headers */,
+				FF3439D6F47D50371F06E9341FC413CA /* ColorPickerView.h in Headers */,
+				C8F1AD96D6FB6C62FFC9F873E840317B /* LabelledSlider.h in Headers */,
+				1771F32856B82A6C64B59DE3541159DF /* UIColor+Colormix.h in Headers */,
+				00E4F75EC7A62A5AB25A274CD787A387 /* UIImage+Colormix.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +330,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		09BF7D27F729D5E30C7208807B7B0EC4 /* ColorMix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2EBD322C4CB12897DB3CC2FE5E34AD3 /* Build configuration list for PBXNativeTarget "ColorMix" */;
+			buildPhases = (
+				21EAF89A46538BE72283EACEB1D8BB2E /* Sources */,
+				C102A60AAC56CC76B4BB30835D6B6D41 /* Frameworks */,
+				810381259E9EF1BC3F8EAF7270A24510 /* Resources */,
+				5D3ACE4718385035B77125FF520876F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				437A4365B596D33C92D1C082192541C5 /* PBXTargetDependency */,
+			);
+			name = ColorMix;
+			productName = ColorMix;
+			productReference = 34D073251265219D2418E12B643D4DC2 /* ColorMix.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4BAF72B84B32DC0467EC310F28DE9A70 /* Pods-ColorMix_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE7DDEFB96E0B89AC6CAF7238C6D68B9 /* Build configuration list for PBXNativeTarget "Pods-ColorMix_Tests" */;
@@ -327,7 +363,7 @@
 			);
 			name = "Pods-ColorMix_Tests";
 			productName = "Pods-ColorMix_Tests";
-			productReference = 3E2D914D631505F3C998C9C91DB04C17 /* Pods_ColorMix_Tests.framework */;
+			productReference = 322B0DF18306F4157A523572FE452EFC /* Pods_ColorMix_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8B1567C4CD6E8E0528E2CF55D470FC07 /* Pods-ColorMix_Example */ = {
@@ -345,26 +381,25 @@
 			);
 			name = "Pods-ColorMix_Example";
 			productName = "Pods-ColorMix_Example";
-			productReference = ED40828D9DDF07260E6224B9F2F1CC80 /* Pods_ColorMix_Example.framework */;
+			productReference = 778FE353D851FFBD904510714C2AB094 /* Pods_ColorMix_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F5FB1C654AAA865BE9AB27D484C1A138 /* ColorMix */ = {
+		DC281B4F32CB3E2BF06478F5FC67AF85 /* ColorMix-ColorMix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D11D77C8FD34D7A32FDCAA005AEBDF5 /* Build configuration list for PBXNativeTarget "ColorMix" */;
+			buildConfigurationList = BB76FBAE17A69CA4C0C06862E5A1D627 /* Build configuration list for PBXNativeTarget "ColorMix-ColorMix" */;
 			buildPhases = (
-				E448FC9B6425191A01BBF70D6C87A351 /* Sources */,
-				74B03FD12B1E1270166F5BE5D5231CF9 /* Frameworks */,
-				7B5DAE84CF0719AE2E71EB09916AA853 /* Headers */,
-				AECF3ABF3A099A1A4F5E8E7269E487B7 /* Resources */,
+				4515ACA3F3A2B080349D88A156B1EF52 /* Sources */,
+				507FB00C070F7065E80E2AC5F4AD5AB2 /* Frameworks */,
+				71A479FB01A2351ED189FD1A1F23665C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ColorMix;
-			productName = ColorMix;
-			productReference = 86CA32D2756ED4BB92ECB9BCEF744A41 /* ColorMix.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "ColorMix-ColorMix";
+			productName = "ColorMix-ColorMix";
+			productReference = 0AEC77D635987E7F7AF9689E5F55734E /* ColorMix.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -383,11 +418,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C1C1A57C5D0AB863F1EE74F93A324A92 /* Products */;
+			productRefGroup = A128F7A53A507C0C5ACF32F4FE7EF222 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F5FB1C654AAA865BE9AB27D484C1A138 /* ColorMix */,
+				09BF7D27F729D5E30C7208807B7B0EC4 /* ColorMix */,
+				DC281B4F32CB3E2BF06478F5FC67AF85 /* ColorMix-ColorMix */,
 				8B1567C4CD6E8E0528E2CF55D470FC07 /* Pods-ColorMix_Example */,
 				4BAF72B84B32DC0467EC310F28DE9A70 /* Pods-ColorMix_Tests */,
 			);
@@ -395,18 +431,45 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AECF3ABF3A099A1A4F5E8E7269E487B7 /* Resources */ = {
+		71A479FB01A2351ED189FD1A1F23665C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46AC94759E52C9B957B1E90DECE2B428 /* ColorPickerView.xib in Resources */,
-				1FC4238EABDD592BD3794A4C20F92D45 /* LabelledSlider.xib in Resources */,
+				198E98515AEF12EE54A838801DFE6E0D /* ColorPickerView.xib in Resources */,
+				C88FAEDD6A04240E9140BE267DE1191F /* LabelledSlider.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810381259E9EF1BC3F8EAF7270A24510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B83DA7865C29A4DEBBDFE887AC90C0 /* ColorMix.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		21EAF89A46538BE72283EACEB1D8BB2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8215DEA1C17A25E856076A4CCD2EE281 /* ColorMix-dummy.m in Sources */,
+				1F6856AD07AF77E47E2D94BC064589E7 /* ColorPickerView.m in Sources */,
+				08583F72337EECFBE9FF57436E978C61 /* LabelledSlider.m in Sources */,
+				5DC36418E34E783FCF9D3662B356D478 /* UIColor+Colormix.m in Sources */,
+				09307BC8CB06B0E8DCFF266F3BD7D00E /* UIImage+Colormix.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4515ACA3F3A2B080349D88A156B1EF52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3ED34B42EDDC72BD1205D69BDDE46C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,28 +486,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E448FC9B6425191A01BBF70D6C87A351 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				926651B6304093A5316B7CF454471403 /* ColorMix-dummy.m in Sources */,
-				13641AC89F5C2F0220E223BE496F3F8C /* ColorPickerView.m in Sources */,
-				68DFD6D0517F885B3051419E318BB8D4 /* ColorPickerView.xib in Sources */,
-				4A9DF57410AFBCDC16BCFC0465E8BA3F /* LabelledSlider.m in Sources */,
-				A1F9B86B8090A3B9D61A9BF015C7A580 /* LabelledSlider.xib in Sources */,
-				04A6CC12E22A613CD2CA12BDB4614A58 /* UIColor+Colormix.m in Sources */,
-				5AC09E537912FF9099CED1CB8478FA91 /* UIImage+Colormix.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		1536C8C1C28CBCB965E7509A0798B251 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ColorMix;
-			target = F5FB1C654AAA865BE9AB27D484C1A138 /* ColorMix */;
+			target = 09BF7D27F729D5E30C7208807B7B0EC4 /* ColorMix */;
 			targetProxy = 5C38803B9CED4EFEC13CBCE9F0A6E37C /* PBXContainerItemProxy */;
+		};
+		437A4365B596D33C92D1C082192541C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ColorMix-ColorMix";
+			target = DC281B4F32CB3E2BF06478F5FC67AF85 /* ColorMix-ColorMix */;
+			targetProxy = 55D11562BE5D6EC0226A577DED0D3F58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -491,6 +546,35 @@
 			};
 			name = Debug;
 		};
+		11E032FFEED53194FE51EA6557DE2F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E9F05EAAF9FD0EA3D37D045967CDF5 /* ColorMix.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ColorMix/ColorMix-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ColorMix/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ColorMix/ColorMix.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ColorMix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		3131D8854515946670D236A286D39F50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3138E94B79C17CCA4F987EFDCA3AAC7 /* Pods-ColorMix_Example.release.xcconfig */;
@@ -524,9 +608,9 @@
 			};
 			name = Release;
 		};
-		4B8DC36CF51472E3FD44E00B8D0210F0 /* Release */ = {
+		3D7F792F2744A994DC610365E3B5631B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D50E2D1FC9591C946AFF33F21D6D3589 /* ColorMix.xcconfig */;
+			baseConfigurationReference = 63E9F05EAAF9FD0EA3D37D045967CDF5 /* ColorMix.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -652,6 +736,40 @@
 			};
 			name = Debug;
 		};
+		AE74FBBB5BB1860CF3BC046D3F0A2E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E9F05EAAF9FD0EA3D37D045967CDF5 /* ColorMix.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ColorMix";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ColorMix/ResourceBundle-ColorMix-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ColorMix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C70961D65EA3DD9A28307E42A759E53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E9F05EAAF9FD0EA3D37D045967CDF5 /* ColorMix.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ColorMix";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ColorMix/ResourceBundle-ColorMix-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ColorMix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -690,47 +808,9 @@
 			};
 			name = Release;
 		};
-		F58AC24A8BEA11D3B7130A05EE673212 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D50E2D1FC9591C946AFF33F21D6D3589 /* ColorMix.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ColorMix/ColorMix-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ColorMix/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ColorMix/ColorMix.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ColorMix;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D11D77C8FD34D7A32FDCAA005AEBDF5 /* Build configuration list for PBXNativeTarget "ColorMix" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F58AC24A8BEA11D3B7130A05EE673212 /* Debug */,
-				4B8DC36CF51472E3FD44E00B8D0210F0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -754,6 +834,24 @@
 			buildConfigurations = (
 				9FDF411008878D504E8E6B446389DDA9 /* Debug */,
 				7BFF017B72773BF189051229DB53B999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB76FBAE17A69CA4C0C06862E5A1D627 /* Build configuration list for PBXNativeTarget "ColorMix-ColorMix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70961D65EA3DD9A28307E42A759E53A /* Debug */,
+				AE74FBBB5BB1860CF3BC046D3F0A2E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2EBD322C4CB12897DB3CC2FE5E34AD3 /* Build configuration list for PBXNativeTarget "ColorMix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E032FFEED53194FE51EA6557DE2F3A /* Debug */,
+				3D7F792F2744A994DC610365E3B5631B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

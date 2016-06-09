@@ -6,7 +6,6 @@
 //
 //
 
-
 #import "UIColor+Colormix.h"
 #import "UIImage+Colormix.h"
 #import "ColorPickerView.h"
