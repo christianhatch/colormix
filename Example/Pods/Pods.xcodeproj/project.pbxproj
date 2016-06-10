@@ -538,6 +538,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ColorMix/ColorMix-prefix.pch";
+				IBC_FLATTEN_NIBS = NO;
 				INFOPLIST_FILE = "Target Support Files/ColorMix/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -704,6 +705,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ColorMix/ColorMix-prefix.pch";
+				IBC_FLATTEN_NIBS = NO;
 				INFOPLIST_FILE = "Target Support Files/ColorMix/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
