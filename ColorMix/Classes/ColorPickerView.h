@@ -20,8 +20,8 @@
  @param view  The colorPickerView that had the picked color change.
  @param color The new color that has been picked.
  */
-- (void)colorPickerView:(ColorPickerView *)view
-   pickedColorDidChange:(UIColor *)color;
+- (void)colorPickerView:(nonnull ColorPickerView *)view
+   pickedColorDidChange:(nonnull UIColor *)color;
 
 @end
 
@@ -38,7 +38,7 @@
 /**
  The color picked by the user or set by calling setPickedColor:animated:
  */
-@property (nonatomic, readonly) UIColor *pickedColor;
+@property (nonatomic, readonly, nonnull) UIColor *pickedColor;
 
 /**
  Sets the picked color and optionally animates the sliders moving.
@@ -46,14 +46,14 @@
  @param pickedColor The new color to set as the picked color
  @param animated    Optionally animate the transition the new color.
  */
-- (void)setPickedColor:(UIColor *)pickedColor
+- (void)setPickedColor:(nonnull UIColor *)pickedColor
               animated:(BOOL)animated;
 
 
 /**
  The delegate to receive callbacks.
  */
-@property (weak, nonatomic) IBOutlet id <ColorPickerViewDelegate> delegate;
+@property (weak, nonatomic, nullable) IBOutlet id <ColorPickerViewDelegate> delegate;
 
 
 /**
@@ -64,8 +64,8 @@
  
  @return A new ColorPickerView with the given frame and delegate.
  */
-+ (instancetype)colorPickerViewWithFrame:(CGRect)frame
-                                delegate:(id <ColorPickerViewDelegate>)delegate;
++ (nullable instancetype)colorPickerViewWithFrame:(CGRect)frame
+                                         delegate:(nullable id <ColorPickerViewDelegate>)delegate;
 
 @end
 

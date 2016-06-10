@@ -53,11 +53,6 @@ CGFloat const kColorPickerViewRGBScale = 255;
 + (instancetype)colorPickerViewWithFrame:(CGRect)frame
                                 delegate:(id<ColorPickerViewDelegate>)delegate
 {
-//    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"ColorMix" ofType:@"bundle"];
-//    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-//    NSLog((@"bundle path %@", bundlePath));
-//    NSLog(@"bundle %@", bundle);
-
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     ColorPickerView *picker = [[UINib nibWithNibName:NSStringFromClass([self class]) bundle:bundle] instantiateWithOwner:nil options:nil].firstObject;
     picker.frame = frame;
