@@ -20,9 +20,7 @@
     "ios": "9.0"
   },
   "source_files": "ColorMix/Classes/**/*",
-  "resource_bundles": {
-    "ColorMix": [
-      "ColorMix/Assets/*.xib"
-    ]
-  }
+  "resources": [
+    "ColorMix/**/*.{xib}"
+  ]
 }

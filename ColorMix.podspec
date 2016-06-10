@@ -26,10 +26,13 @@ Pod::Spec.new do |s|
 
   s.source_files = 'ColorMix/Classes/**/*'
   
-#  s.resources = ['ColorMix/Classes/ColorPickerView.xib', 'ColorMix/Classes/LabelledSlider.xib']
-  s.resource_bundles = {
-     'ColorMix' => ['ColorMix/Assets/*.xib']
-   }
+#  s.resources = ['JSQMessagesViewController/Assets/JSQMessagesAssets.bundle', 'JSQMessagesViewController/**/*.{xib}']
+
+  s.resources = ['ColorMix/**/*.{xib}']
+  
+#  s.resource_bundles = {
+#     'ColorMix' => ['ColorMix/Assets/*.xib']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
