@@ -33,13 +33,26 @@
 }
 
 + (UIImage *)verticalLineImageWithColor:(UIColor *)color
-                                   size:(CGSize)size;
+                                   size:(CGSize)size
+                              alignment:(ImageAlignment)alignment;
 {
     UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
     
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(size.width/2, 0)];
-    [path addLineToPoint:CGPointMake(size.width/2, size.height)];
+    CGFloat xCoord = 0;
+    
+    if (alignment == ImageAlignmentLeft) {
+        xCoord = 1;
+    }
+    else if (alignment == ImageAlignmentRight) {
+        xCoord = size.width;
+    }
+    else if (alignment == ImageAlignmentCenter) {
+        xCoord = (size.width/2)-1;
+    }
+    
+    [path moveToPoint:CGPointMake(xCoord, 0)];
+    [path addLineToPoint:CGPointMake(xCoord, size.height)];
     
     path.lineWidth = 1;
     [color setStroke];
@@ -52,3 +65,31 @@
 
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

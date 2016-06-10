@@ -70,8 +70,7 @@ CGFloat const kColorPickerViewRGBScale = 255;
 {
     [super awakeFromNib];
     [self setupUI];
-    [self refreshGradientUI];
-//    [self configureTapToCopyLabel];
+    [self refreshGradients];
 }
 
 
@@ -125,24 +124,31 @@ CGFloat const kColorPickerViewRGBScale = 255;
 
 - (void)rgbDidSlide
 {
-    UIColor *color = [UIColor colorWithRed:self.redSlider.slider.value/kColorPickerViewRGBScale
-                                    green:self.greenSlider.slider.value/kColorPickerViewRGBScale
-                                    blue:self.blueSlider.slider.value/kColorPickerViewRGBScale
-                                    alpha:1];
-    
+    CGFloat red = self.redSlider.slider.value/kColorPickerViewRGBScale;
+    CGFloat green = self.greenSlider.slider.value/kColorPickerViewRGBScale;
+    CGFloat blue = self.blueSlider.slider.value/kColorPickerViewRGBScale;
+
+    UIColor *color = [UIColor colorWithRed:red
+                                     green:green
+                                      blue:blue
+                                     alpha:1];
+
     [self setPickedColor:color animated:NO];
 }
 
 - (void)hslDidSlide
 {
-    UIColor *color = [UIColor colorWithHue:self.hueSlider.slider.value/kColorPickerViewHueScale
-                                saturation:MAX(self.saturationSlider.slider.value/kColorPickerViewSaturationBrightnessScale, 0.01)
-                                brightness:MAX(self.brightnessSlider.slider.value/kColorPickerViewSaturationBrightnessScale, 0.01)
-                                    alpha:1];
+    CGFloat hue = self.hueSlider.slider.value/kColorPickerViewHueScale;
+    CGFloat sat = self.saturationSlider.slider.value/kColorPickerViewSaturationBrightnessScale;
+    CGFloat bright = self.brightnessSlider.slider.value/kColorPickerViewSaturationBrightnessScale;
+
+    UIColor *color = [UIColor colorWithHue:hue
+                                saturation:MAX(sat, 0.01)
+                                brightness:MAX(bright, 0.01)
+                                     alpha:1];
     
     [self setPickedColor:color animated:NO];
 }
-
 
 - (void)updateUIAnimated:(BOOL)animated
 {
@@ -154,7 +160,7 @@ CGFloat const kColorPickerViewRGBScale = 255;
                      animations:^
      {
          [self syncSlidersToColorAnimated:animated];
-         [self refreshGradientUI];
+         [self refreshGradients];
          [self updateLabels];
      }
                      completion:nil];
@@ -164,6 +170,53 @@ CGFloat const kColorPickerViewRGBScale = 255;
 
 - (void)syncSlidersToColorAnimated:(BOOL)animated
 {
+    CGSize size = CGSizeMake(14, 33);
+    UIColor *thumbColor = self.pickedColor.contrastingColor;
+
+    CGFloat hue = self.pickedColor.hue;
+    CGFloat sat = self.pickedColor.saturation;
+    CGFloat bright = self.pickedColor.brightness;
+
+    if (hue > .7) {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentRight];
+        [self.hueSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else if (hue < 0.3){
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentLeft];
+        [self.hueSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentCenter];
+        [self.hueSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    
+    if (sat > .7) {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentRight];
+        [self.saturationSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else if (sat < 0.3){
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentLeft];
+        [self.saturationSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentCenter];
+        [self.saturationSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    
+    if (bright > .7) {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentRight];
+        [self.brightnessSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else if (bright < 0.3){
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentLeft];
+        [self.brightnessSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentCenter];
+        [self.brightnessSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+
+    
     [self.hueSlider.slider setValue:self.pickedColor.hue * kColorPickerViewHueScale
                            animated:animated];
     [self.saturationSlider.slider setValue:self.pickedColor.saturation * kColorPickerViewSaturationBrightnessScale
@@ -171,12 +224,57 @@ CGFloat const kColorPickerViewRGBScale = 255;
     [self.brightnessSlider.slider setValue:self.pickedColor.brightness * kColorPickerViewSaturationBrightnessScale
                                   animated:animated];
     
+    CGFloat red = self.pickedColor.red;
+    CGFloat green = self.pickedColor.green;
+    CGFloat blue = self.pickedColor.blue;
+    
+    if (red > .7) {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentRight];
+        [self.redSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else if (red < 0.3){
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentLeft];
+        [self.redSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentCenter];
+        [self.redSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    
+    if (green > .7) {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentRight];
+        [self.greenSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else if (green < 0.3){
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentLeft];
+        [self.greenSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentCenter];
+        [self.greenSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    
+    if (blue > .7) {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentRight];
+        [self.blueSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else if (blue < 0.3){
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentLeft];
+        [self.blueSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+    else {
+        UIImage *thumb = [UIImage verticalLineImageWithColor:thumbColor size:size alignment: ImageAlignmentCenter];
+        [self.blueSlider.slider setThumbImage:thumb forState:UIControlStateNormal];
+    }
+
     [self.redSlider.slider setValue:self.pickedColor.red * kColorPickerViewRGBScale
                            animated:animated];
     [self.greenSlider.slider setValue:self.pickedColor.green * kColorPickerViewRGBScale
                              animated:animated];
     [self.blueSlider.slider setValue:self.pickedColor.blue * kColorPickerViewRGBScale
                             animated:animated];
+    
+    
 }
 
 - (void)updateLabels
@@ -202,7 +300,7 @@ CGFloat const kColorPickerViewRGBScale = 255;
     }
 }
 
-- (void)refreshGradientUI
+- (void)refreshGradients
 {
     [self.hueGradient removeFromSuperlayer];
     [self.saturationGradient removeFromSuperlayer];
@@ -235,6 +333,9 @@ CGFloat const kColorPickerViewRGBScale = 255;
     self.redSlider.slider.minimumTrackTintColor = [UIColor redColor];
     self.greenSlider.slider.minimumTrackTintColor = [UIColor greenColor];
     self.blueSlider.slider.minimumTrackTintColor = [UIColor blueColor];
+    self.redSlider.slider.maximumTrackTintColor = [UIColor redColor];
+    self.greenSlider.slider.maximumTrackTintColor = [UIColor greenColor];
+    self.blueSlider.slider.maximumTrackTintColor = [UIColor blueColor];
     
     [self.rgbContainer addArrangedSubview:self.redSlider];
     [self.rgbContainer addArrangedSubview:self.greenSlider];
@@ -266,7 +367,7 @@ CGFloat const kColorPickerViewRGBScale = 255;
         [slider setMaximumTrackImage:clearTrackImage forState:UIControlStateNormal];
     }
     
-    UIImage *thumb = [UIImage verticalLineImageWithColor:[UIColor blackColor] size:CGSizeMake(33, 33)];
+    UIImage *thumb = [UIImage verticalLineImageWithColor:[UIColor blackColor] size:CGSizeMake(20, 33) alignment: ImageAlignmentCenter];
     for (UISlider *slider in @[self.hueSlider.slider, self.saturationSlider.slider, self.brightnessSlider.slider, self.redSlider.slider, self.greenSlider.slider, self.blueSlider.slider])
     {
         [slider setThumbImage:thumb forState:UIControlStateNormal];
@@ -275,13 +376,15 @@ CGFloat const kColorPickerViewRGBScale = 255;
 
 }
 
+
+
 #pragma mark - Getters
 
 - (CAGradientLayer *)hueGradient
 {
     if (!_hueGradient) {
         _hueGradient = [CAGradientLayer layer];
-        _hueGradient.frame = CGRectInset(self.hueSlider.slider.frame, 2, 2);
+        _hueGradient.frame = CGRectInset(self.hueSlider.slider.frame, 0, 2);
         
         _hueGradient.startPoint = CGPointZero;
         _hueGradient.endPoint = CGPointMake(1, 0);
@@ -295,7 +398,7 @@ CGFloat const kColorPickerViewRGBScale = 255;
 {
     if (!_saturationGradient) {
         _saturationGradient = [CAGradientLayer layer];
-        _saturationGradient.frame = CGRectInset(self.saturationSlider.slider.frame, 2, 2);
+        _saturationGradient.frame = CGRectInset(self.saturationSlider.slider.frame, 0, 2);
         
         _saturationGradient.startPoint = CGPointZero;
         _saturationGradient.endPoint = CGPointMake(1, 0);
@@ -309,7 +412,7 @@ CGFloat const kColorPickerViewRGBScale = 255;
 {
     if (!_brightnessGradient) {
         _brightnessGradient = [CAGradientLayer layer];
-        _brightnessGradient.frame = CGRectInset(self.brightnessSlider.slider.frame, 2, 2);
+        _brightnessGradient.frame = CGRectInset(self.brightnessSlider.slider.frame, 0, 2);
         
         _brightnessGradient.startPoint = CGPointZero;
         _brightnessGradient.endPoint = CGPointMake(1, 0);
@@ -374,5 +477,32 @@ CGFloat const kColorPickerViewRGBScale = 255;
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

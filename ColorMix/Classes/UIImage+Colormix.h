@@ -6,6 +6,12 @@
 //  Copyright © 2016 Commodoreftp. All rights reserved.
 //
 
+typedef NS_ENUM(NSInteger, ImageAlignment)
+{
+    ImageAlignmentLeft,
+    ImageAlignmentRight,
+    ImageAlignmentCenter
+};
 
 @interface UIImage (Colormix)
 
@@ -13,6 +19,7 @@
                              size:(CGSize)size;
 
 + (UIImage *)verticalLineImageWithColor:(UIColor *)color
-                                   size:(CGSize)size;
+                                   size:(CGSize)size
+                              alignment:(ImageAlignment)alignment;
 
 @end
