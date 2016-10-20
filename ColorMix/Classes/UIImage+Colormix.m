@@ -19,10 +19,7 @@
     
     [roundedRect moveToPoint:CGPointMake(roundedRect.bounds.size.width/2, 0)];
     [roundedRect addLineToPoint:CGPointMake(roundedRect.bounds.size.width/2, roundedRect.bounds.size.height)];
-    
-//    [roundedRect moveToPoint:CGPointMake(0, roundedRect.bounds.size.height/2)];
-//    [roundedRect addLineToPoint:CGPointMake(roundedRect.bounds.size.width, roundedRect.bounds.size.height/2)];
-    
+        
     roundedRect.lineWidth = 1;
     [color setStroke];
     [roundedRect stroke];

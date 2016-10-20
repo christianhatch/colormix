@@ -68,7 +68,6 @@ CGFloat const kColorPickerViewRGBScale = 255;
     [self refreshGradients];
 }
 
-
 #pragma mark - IBActions
 
 - (IBAction)sliderValueChangedContinuous:(UISlider *)sender
@@ -268,8 +267,6 @@ CGFloat const kColorPickerViewRGBScale = 255;
                              animated:animated];
     [self.blueSlider.slider setValue:self.pickedColor.blue * kColorPickerViewRGBScale
                             animated:animated];
-    
-    
 }
 
 - (void)updateLabels
@@ -352,7 +349,7 @@ CGFloat const kColorPickerViewRGBScale = 255;
     [self.hsbContainer addArrangedSubview:self.hueSlider];
     [self.hsbContainer addArrangedSubview:self.saturationSlider];
     [self.hsbContainer addArrangedSubview:self.brightnessSlider];
-    
+
     UIImage *clearTrackImage = [UIImage squareImageWithColor:[UIColor clearColor]
                                                         size:CGSizeMake(30, 30)];
     
@@ -369,6 +366,10 @@ CGFloat const kColorPickerViewRGBScale = 255;
         [slider addTarget:self action:@selector(sliderValueChangedContinuous:) forControlEvents:UIControlEventValueChanged];
     }
 
+    //round corners
+    for (UIView *view in @[self.redSlider, self.greenSlider, self.blueSlider, self.hueSlider, self.saturationSlider, self.brightnessSlider]) {
+        view.layer.cornerRadius = 2;
+    }
 }
 
 
