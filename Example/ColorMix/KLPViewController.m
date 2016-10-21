@@ -64,7 +64,7 @@
                         options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionTransitionCrossDissolve
                      animations:^
      {
-         self.view.backgroundColor = color;
+         
      }
                      completion:nil];
 }

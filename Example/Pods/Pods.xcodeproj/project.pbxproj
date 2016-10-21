@@ -13,6 +13,8 @@
 		1FC4238EABDD592BD3794A4C20F92D45 /* LabelledSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C643975867036C90D6E7B98F711929 /* LabelledSlider.xib */; };
 		25E0E5919075AC186728526BBD58B3F9 /* LabelledSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 933B0885A3A7656FBB07A086062432D9 /* LabelledSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		305ADB07BB7FFDDB53D62517B07BE62A /* ColorMix.h in Headers */ = {isa = PBXBuildFile; fileRef = C615D6D66666F4FD77CD7C900F08F0EB /* ColorMix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45ED85251DB9250E000F9B66 /* ColorPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45ED85231DB9250E000F9B66 /* ColorPickerViewController.h */; };
+		45ED85261DB9250E000F9B66 /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45ED85241DB9250E000F9B66 /* ColorPickerViewController.m */; };
 		46AC94759E52C9B957B1E90DECE2B428 /* ColorPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530582C7CA506B773783D3A7F5EBFA52 /* ColorPickerView.xib */; };
 		49F9E1F9C0183F88E3C4BB5FB6C0D1E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		4A9DF57410AFBCDC16BCFC0465E8BA3F /* LabelledSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F82A297A3C0C52224635307DEA2A607 /* LabelledSlider.m */; };
@@ -48,6 +50,8 @@
 		2F82A297A3C0C52224635307DEA2A607 /* LabelledSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LabelledSlider.m; sourceTree = "<group>"; };
 		3B50533CE8D7F198E6A03A3861327167 /* Pods-ColorMix_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColorMix_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3E2D914D631505F3C998C9C91DB04C17 /* Pods_ColorMix_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorMix_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45ED85231DB9250E000F9B66 /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
+		45ED85241DB9250E000F9B66 /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
 		464FABBD08C4CBA0B2585E39DAA30E09 /* Pods-ColorMix_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColorMix_Tests-resources.sh"; sourceTree = "<group>"; };
 		4E395743C673497980AA376E24530C85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F695F9C889A071C0D5C7504363C1424 /* UIColor+Colormix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colormix.m"; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				C615D6D66666F4FD77CD7C900F08F0EB /* ColorMix.h */,
+				45ED85231DB9250E000F9B66 /* ColorPickerViewController.h */,
+				45ED85241DB9250E000F9B66 /* ColorPickerViewController.m */,
 				59F1B7C92334DB2E35E7E0BCBB5C2633 /* ColorPickerView.h */,
 				FC732AC24C7A0643B8FFA52741107E4E /* ColorPickerView.m */,
 				530582C7CA506B773783D3A7F5EBFA52 /* ColorPickerView.xib */,
@@ -290,6 +296,7 @@
 				896A0AE69C08C17B4005C30872DFEE89 /* ColorPickerView.h in Headers */,
 				25E0E5919075AC186728526BBD58B3F9 /* LabelledSlider.h in Headers */,
 				C72B0688412938DC32EC547656EF79D9 /* UIColor+Colormix.h in Headers */,
+				45ED85251DB9250E000F9B66 /* ColorPickerViewController.h in Headers */,
 				95FD3CC597A671E576BEFAD59580B1F8 /* UIImage+Colormix.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +436,7 @@
 			files = (
 				926651B6304093A5316B7CF454471403 /* ColorMix-dummy.m in Sources */,
 				13641AC89F5C2F0220E223BE496F3F8C /* ColorPickerView.m in Sources */,
+				45ED85261DB9250E000F9B66 /* ColorPickerViewController.m in Sources */,
 				68DFD6D0517F885B3051419E318BB8D4 /* ColorPickerView.xib in Sources */,
 				4A9DF57410AFBCDC16BCFC0465E8BA3F /* LabelledSlider.m in Sources */,
 				A1F9B86B8090A3B9D61A9BF015C7A580 /* LabelledSlider.xib in Sources */,

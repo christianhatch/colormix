@@ -104,6 +104,8 @@ CGFloat const kColorPickerViewRGBScale = 255;
         _pickedColor = pickedColor;
         [self updateUIAnimated:animated];
         
+        self.backgroundColor = self.pickedColor;
+        
         if (self.delegate && [self.delegate respondsToSelector:@selector(colorPickerView:pickedColorDidChange:)])
         {
             [self.delegate colorPickerView:self
