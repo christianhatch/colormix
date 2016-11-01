@@ -23,6 +23,14 @@
 - (void)colorPickerView:(nonnull ColorPickerView *)view
    pickedColorDidChange:(nonnull UIColor *)color;
 
+
+/**
+ Called when the user releases their finger from one of the sliders.
+
+ @param view The colorPickerView that the user finished interacting with.
+ */
+- (void)colorPickerViewUserFinishedInteracting:(nonnull ColorPickerView *)view;
+
 @end
 
 

@@ -69,6 +69,14 @@
                      completion:nil];
 }
 
+- (void)colorPickerViewUserFinishedInteracting:(ColorPickerView *)view
+{
+    NSLog(@"Finished interacting");
+}
+
+
+
+
 #pragma mark - Getters
 
 - (ColorPickerView *)colorPickerView

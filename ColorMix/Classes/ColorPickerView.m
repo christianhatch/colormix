@@ -70,7 +70,7 @@ CGFloat const kColorPickerViewRGBScale = 255;
 
 #pragma mark - IBActions
 
-- (IBAction)sliderValueChangedContinuous:(UISlider *)sender
+- (void)sliderValueChangedContinuous:(UISlider *)sender
 {
     NSInteger tag = sender.tag;
     
@@ -96,6 +96,13 @@ CGFloat const kColorPickerViewRGBScale = 255;
     }
 }
 
+- (void)doneInteracting:(UISlider *)sender
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(colorPickerViewUserFinishedInteracting:)])
+    {
+        [self.delegate colorPickerViewUserFinishedInteracting:self];
+    }
+}
 
 - (void)setPickedColor:(UIColor *)pickedColor
               animated:(BOOL)animated
@@ -325,10 +332,10 @@ CGFloat const kColorPickerViewRGBScale = 255;
     self.blueSlider.slider.tag = SliderNameBlue;
     
     self.redSlider.slider.minimumTrackTintColor = [UIColor redColor];
-    self.greenSlider.slider.minimumTrackTintColor = [UIColor greenColor];
-    self.blueSlider.slider.minimumTrackTintColor = [UIColor blueColor];
     self.redSlider.slider.maximumTrackTintColor = [UIColor redColor];
+    self.greenSlider.slider.minimumTrackTintColor = [UIColor greenColor];
     self.greenSlider.slider.maximumTrackTintColor = [UIColor greenColor];
+    self.blueSlider.slider.minimumTrackTintColor = [UIColor blueColor];
     self.blueSlider.slider.maximumTrackTintColor = [UIColor blueColor];
     
     [self.rgbContainer addArrangedSubview:self.redSlider];
@@ -366,6 +373,8 @@ CGFloat const kColorPickerViewRGBScale = 255;
     {
         [slider setThumbImage:thumb forState:UIControlStateNormal];
         [slider addTarget:self action:@selector(sliderValueChangedContinuous:) forControlEvents:UIControlEventValueChanged];
+        [slider addTarget:self action:@selector(doneInteracting:) forControlEvents:UIControlEventTouchUpInside];
+        [slider addTarget:self action:@selector(doneInteracting:) forControlEvents:UIControlEventTouchUpOutside];
     }
 
     //round corners

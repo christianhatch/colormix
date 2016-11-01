@@ -16,4 +16,6 @@
 
 + (nullable instancetype)labelledSliderWithTitle:(nullable NSString *)title;
 
+- (void)enableTapToChange;
+
 @end
